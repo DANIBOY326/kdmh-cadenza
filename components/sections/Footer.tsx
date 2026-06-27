@@ -66,7 +66,7 @@ export function Footer() {
               aria-label="King D Music Hub – Cadenza Season 3.0"
             >
               <Image
-                src="/images/kdmh-logo.png"
+                src="/images/kdmh-main-logo.png"
                 alt="Cadenza Music Logo"
                 width={60}
                 height={60}

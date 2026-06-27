@@ -81,7 +81,7 @@ export function Navbar() {
   aria-label="Cadenza Music Season 3.0 – Home"
 >
   <Image
-    src="/images/kdmh-logo.png"
+    src="/images/kdmh-main-logo.png"
     alt="King D Music Hub Logo"
     width={130}
     height={130}
