@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+.env
+.env.local
+*.log
+
+# Media files
+*.mp4
+*.mov
+*.avi
+*.zip
+*.rar
+*.psd
+*.ai
+node_modules

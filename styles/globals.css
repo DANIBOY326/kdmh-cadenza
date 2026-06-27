@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 220 20% 14%;
+    --background: #111111;
+    --foreground: #ffffff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #C1121F #1a1a1a;
+  }
+
+  body {
+    @apply bg-brand-black text-white font-body antialiased;
+    background-color: #111111;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C1121F;
+    border-radius: 3px;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-2 ring-gold ring-offset-2 ring-offset-brand-black;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Glass card effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  /* Gold shimmer text */
+  .text-gold-shimmer {
+    background: linear-gradient(135deg, #F4B400 0%, #ffd23a 40%, #d99500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Red shimmer text */
+  .text-red-shimmer {
+    background: linear-gradient(135deg, #C1121F 0%, #e2464f 50%, #C1121F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Section padding */
+  .section-pad {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Glow dot */
+  .glow-dot {
+    @apply absolute rounded-full blur-3xl opacity-20 pointer-events-none;
+  }
+
+  /* Divider line */
+  .divider-gold {
+    @apply w-16 h-0.5 bg-gold-gradient rounded-full;
+  }
+
+  /* Animated border gradient */
+  .border-gradient {
+    position: relative;
+  }
+
+  .border-gradient::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(244,180,0,0.4), rgba(193,18,31,0.4), rgba(255,255,255,0.1));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-600 { animation-delay: 600ms; }
+  .animation-delay-800 { animation-delay: 800ms; }
+}
