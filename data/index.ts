@@ -9,10 +9,10 @@ import type {
 
 // ─── About Stats ───────────────────────────────────────────────────────────────
 export const stats: Stat[] = [
-  { value: 200, suffix: "+", label: "Contestants" },
-  { value: 12, suffix: "", label: "Expert Judges" },
+  { value: 150, suffix: "+", label: "Contestants" },
+  { value: 8, suffix: "", label: "Expert Judges" },
   { value: 2, suffix: "", label: "Seasons Held" },
-  { value: 8, suffix: "+", label: "Winners Produced" },
+  { value: 2, suffix: "+", label: "Winners Produced" },
 ];
 
 // ─── Why Join ─────────────────────────────────────────────────────────────────

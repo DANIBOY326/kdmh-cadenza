@@ -83,8 +83,8 @@ export function Navbar() {
   <Image
     src="/images/kdmh-main-logo.png"
     alt="King D Music Hub Logo"
-    width={130}
-    height={130}
+    width={140}
+    height={140}
     className="object-contain"
     priority
   />
