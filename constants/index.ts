@@ -34,5 +34,5 @@ export const SOCIAL_LINKS = {
 
 // ─── Contact ──────────────────────────────────────────────────────────────────
 export const CONTACT_EMAIL = "kingdmusichub@gmail.com";
-export const CONTACT_PHONE = "+234 904 285 2097";
+export const CONTACT_PHONE = "+234 911 046 7379";
 export const CONTACT_ADDRESS = "Abuja, Nigeria";

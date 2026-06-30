@@ -165,7 +165,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/[0.06] pt-8 sm:flex-row">
           <p className="text-xs text-white/30">
-            © 2026 King D Music Hub. All rights reserved.
+            © 2026 King D Music Hub. All rights reserved by DGC Multimedia.
           </p>
           <p className="text-xs text-white/20">
             Cadenza Music Season 3.0
