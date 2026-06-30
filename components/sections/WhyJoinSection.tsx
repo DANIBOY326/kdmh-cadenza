@@ -38,7 +38,7 @@ export function WhyJoinSection() {
             eyebrow="Why Join"
             title="Six Reasons To"
             titleAccent="Sign Up"
-            description="More than a competition — Cadenza is a life-changing experience built for musicians who believe their gift has a higher purpose."
+            description="More than a competition, Cadenza is a life-changing experience built for musicians who believe their gift has a higher purpose."
           />
         </motion.div>
 
